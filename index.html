@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Spam filter etc
+    </title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__main">
+                <div class="header__user-img">
+                    <img src="https://img.freepik.com/free-vector/vector-realistic-white-baseball-cap-side-view-isolated-background_1284-45495.jpg?t=st=1650394883~exp=1650395483~hmac=4a781952aa1286e83923ec48b15bc01419731f1942073d91a2b2aa84b971d3cf&w=1480" alt="" id="userpic">
+                </div>   
+                <div class="header__auth-box">
+                    <label for="header-username">Enter your name:</label>
+                    <input type="text" placeholder="Name" name="username" id="header-username" class="header__username-input" required pattern="^[a-zA-Zа-яА-Я- ]+$" minlength="2" maxlength="20"> 
+                    <label for="header-image-link">Link to image:</label>
+                    <input type="url" name="image-link" id="header-image-link" placeholder="https://example.com" pattern="https://.*" required>
+                    <button type="button" id="header-remember-button" class="header__button">Remember me!</button>
+                    <!-- <button type="button" id="header-forget-button" class="header__button">Forget me!</button> -->
+                </div>   
+                <div class="header__name-box">
+                    <div class="header__username-block"></div>
+                    <button type="button" id="header-forget-button" class="header__button">Forget me!</button>
+                </div>   
+            </div>
+            <div class="header__errors">
+                <!-- sss<br>dsff<br>sdffsdf<br>sss<br>dsff<br>sdffsdf<br> -->
+            </div>  
+        </div>
+        <div class="main">
+            <div class="comments">
+                <!-- область для отображения сообщений -->
+                <div class="comments__messages-items">
+             
+                </div>
+                <div class="comments__input-area">
+                    <textarea class="comments__textarea" name="message-input" id="message-input-id" rows="7"></textarea>
+                    <button class="comments__button" type="button">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
